@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #121723;
+}
+
+/* CABEÇALHO HEADER */
+
+header {
+    background-color: transparent;
+    padding: 20px 15px;  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 1400px;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.menu  {
+    display: flex;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #707B80;
+    font-weight: 600;
+}
+
+.menu li a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.submenu {
+    display: none;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 20px 0px 0px;  
+}
+
+.btn-login .inscrever-se  {
+    background-color: #436CF7;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.btn-login .inscrever-se:hover {
+    background-color: #6387fc;
+    transition: 0.5s;
+}
+
+
+/*PAGINA DE LOGIN*/
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 0px;
+    padding: 50px;
+    width: 100%;
+    max-width: 390px;
+    max-height: 756px;
+    background-color: #1D2430;
+    border-radius: 8px; 
+}
+
+.formulario-login h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.formulario-login p {
+    color: #707B80;
+    margin: 0px 0px 44px;
+    display: flex;
+    text-align: center;
+}
+
+form label {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 0px 12px;
+}
+
+.email-login {
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 340px;
+}
+
+form .email-login, .senha-login {
+    background-color: #2C303B; 
+    width: 330px;
+    height: 50px; 
+    border: none;
+}
+
+.senha-login {
+    margin-bottom: 30px;
+}
+
+form input::placeholder {
+    color: #707B80;
+    font-size: 16px;  
+    padding: 12px 24px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 0px 32px;
+    gap: 10px;
+}
+
+form .checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    accent-color: #1D2430;; 
+    border: 1px solid #707B80;
+    
+}
+
+form .mantenha-conectado {
+    font-size: 14px;
+    color: #707B80;
+    margin: 0;
+}
+.esqueceu-senha  {
+    color: #436CF7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+.btn-entrar {
+    background-color: #436CF7;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 330px;
+    height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn-entrar:hover {
+    background-color: #6387fc;
+}
+
+.sem-conta {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sem-conta h3 {
+    font-size: 16px;
+    color: #707B80;
+}
+
+.sem-conta a {
+    color: #436CF7;
+    text-decoration: none;
+}
+
+.sem-conta a:hover {
+    text-decoration: underline;
+}
+
+/* FIM DA PAGINA DE LOGIN*/
+
+/* PARTE DA RESPONSIVIDADE*/
+
+/* tablet: até 480px */
+@media(max-width: 768px) {
+    .formulario-login {
+        width: 260px;
+    }
+
+    .formulario-login h2 {
+        font-size: 28px;
+    }
+
+    form .email-login, .senha-login {
+        width: 260px;  
+    }
+
+    .btn-entrar {
+        width: 100%;
+    }
+}
+
+/* Celular grande: até 768px */
+@media(max-width: 768px) {
+    .formulario-login {
+        width: 260px;
+    }
+
+    .formulario-login h2 {
+        font-size: 28px;
+    }
+
+    form .email-login, .senha-login {
+        width: 260px;  
+    }
+
+    .btn-entrar {
+        width: 100%;
+    }
+}
+
+/* Celular pequeno: até 480px */
+@media(max-width: 480px) {
+    .formulario-login {
+        width: 240px;
+    }
+
+    .formulario-login h2 {
+        font-size: 22px;
+    }
+
+    .formulario-login p {
+        font-size: 14px;
+    }
+
+    form .email-login, .senha-login {
+        width: 240px;  
+    }
+
+    .btn-entrar {
+        width: 100%;
+    }
+}
