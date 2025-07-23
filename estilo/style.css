@@ -25,6 +25,8 @@ nav {
     align-items: center;
     justify-content: space-around;
     max-height: 1400px;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 nav .logo a {
@@ -73,7 +75,6 @@ nav .logo a {
     background-color: #6387fc;
     transition: 0.5s;
 }
-
 
 /*PAGINA DE LOGIN*/
 
@@ -211,8 +212,9 @@ form .mantenha-conectado {
 
 /* PARTE DA RESPONSIVIDADE*/
 
-/* tablet: até 480px */
-@media(max-width: 768px) {
+/* tablet: até 1024px */
+@media(max-width: 1024px) {
+
     .formulario-login {
         width: 260px;
     }
@@ -232,6 +234,15 @@ form .mantenha-conectado {
 
 /* Celular grande: até 768px */
 @media(max-width: 768px) {
+
+    .menu {
+
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    
+    /* FORMULAROP LOGIN */
     .formulario-login {
         width: 260px;
     }
