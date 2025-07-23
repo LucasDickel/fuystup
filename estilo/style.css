@@ -75,6 +75,72 @@ nav .logo a {
     background-color: #6387fc;
     transition: 0.5s;
 }
+/*FIM CABEÇALHO*/
+
+/*PRIMEIRA SECTION*/
+.primeira-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    background: linear-gradient(to bottom, #121723, #1E232E);
+    height: 600px;
+    padding: 50px;
+    flex-wrap: rap;
+}
+
+.primeira-section h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    padding: 50px 0px;
+    font-weight: bolder;
+}
+
+.primeira-section p {
+    color: #707B80;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 0px 0px 40px 0px;
+}
+
+.btn-primeira-section {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.btn-primeira-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    border-radius: 3px;
+}
+
+.btn-azul {
+    background-color: #436CF7;
+    margin-right: 20px;
+}
+
+.btn-azul:hover {
+    background-color: #415DCF;
+    transition: 0.7s;
+}
+
+.btn-azul::before {
+  content: "🔥 ";
+}
+
+.btn-cinza {
+    background-color: #353943;
+}
+
+.btn-cinza:hover {
+    background-color: #2C303B;
+    transition: 0.7s;
+}
 
 /*PAGINA DE LOGIN*/
 
@@ -234,14 +300,50 @@ form .mantenha-conectado {
 
 /* Celular grande: até 768px */
 @media(max-width: 768px) {
-
+    
+    /* CABEÇALHO */
     .menu {
         align-items: center;
         padding: 30px 0px;
     }
 
+    nav .logo {
+        padding-top: 30px;
+    }
 
-    /* FORMULAROP LOGIN */
+    /* PRIMEIRA SECTION */
+
+    .primeira-section h1  {
+        font-size: 2em;
+    }
+
+    .primeira-section h1 br {
+        display: none;
+    }
+
+    .primeira-section p {
+        font-size: 1em;
+    }
+
+    .primeira-section p br {
+        display: none;
+    }
+
+    .btn-primeira-section {
+        flex-direction: column;
+        display: flex;
+        padding: 20px 0px;
+        gap: 15px;
+    }
+
+    .btn-primeira-section a {
+        width: 300px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+        
+
+    /* FORMULARIO LOGIN */
     .formulario-login {
         width: 260px;
     }
@@ -262,10 +364,14 @@ form .mantenha-conectado {
 /* Celular pequeno: até 480px */
 @media(max-width: 480px) {
 
+    /* CABEÇALHO */
     .menu {
         align-items: center;
         padding: 30px 0px;
     }
+
+    /* PRIMEIRA SECTION */
+    
 
     /* FORMULAROP LOGIN */
     .formulario-login {
