@@ -236,12 +236,11 @@ form .mantenha-conectado {
 @media(max-width: 768px) {
 
     .menu {
-
         align-items: center;
         padding: 30px 0px;
     }
 
-    
+
     /* FORMULAROP LOGIN */
     .formulario-login {
         width: 260px;
@@ -262,6 +261,13 @@ form .mantenha-conectado {
 
 /* Celular pequeno: até 480px */
 @media(max-width: 480px) {
+
+    .menu {
+        align-items: center;
+        padding: 30px 0px;
+    }
+
+    /* FORMULAROP LOGIN */
     .formulario-login {
         width: 240px;
     }
