@@ -85,7 +85,7 @@ nav .logo a {
     margin: auto;
     background: linear-gradient(to bottom, #121723, #1E232E);
     height: 600px;
-    padding: 50px;
+    padding: 20px 20px;
     flex-wrap: rap;
 }
 
@@ -142,6 +142,62 @@ nav .logo a {
     transition: 0.7s;
 }
 
+/*SEGUNDA SECTION*/
+.segunda-section {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.segunda-section h1 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+.segunda-section p {
+    color: #707B80;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0px 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.card img {
+    background: #182038;
+    border-radius: 8px;
+    color: #436CF7;
+    padding: 4px;
+}
+
+.cards h3 {
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+
+.cards p {
+    color: #707B80;
+    font-weight: 600;
+    text-align: start;
+}
+
+/*TERCEIRA SECTION*/
+
+
 /*PAGINA DE LOGIN*/
 
 .formulario-login {
@@ -168,6 +224,39 @@ nav .logo a {
     margin: 0px 0px 44px;
     display: flex;
     text-align: center;
+}
+
+.formulario-login .ou-entre {
+    display: flex;
+    text-decoration: none;
+    color: #707B80;
+    background-color: #2C303B;
+    padding: 15px 73px;
+    margin-bottom: 20px;
+}
+
+.ou-entre:hover {
+    background-color: #20283B;
+    transition: 0.4s;
+    border: 1px solid #415DCF;
+}
+
+.ou-entre svg {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+}
+
+.paragrafo-entre {
+    padding-top: 30px;
+}
+
+.paragrafo-entre::after {
+    content: '\2003\━━━━';
+}
+
+.paragrafo-entre::before {
+    content: '\━━━━\2003';
 }
 
 form label {
@@ -248,6 +337,7 @@ form .mantenha-conectado {
     height: 50px;
     margin-bottom: 20px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .btn-entrar:hover {
@@ -274,27 +364,25 @@ form .mantenha-conectado {
     text-decoration: underline;
 }
 
-/* FIM DA PAGINA DE LOGIN*/
+/* PAGINA DE INSC*/
+
+.linha2 {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 32px;
+}
+
+.aceitar-termos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
 
 /* PARTE DA RESPONSIVIDADE*/
-
-/* tablet: até 1024px */
 @media(max-width: 1024px) {
-
-    .formulario-login {
-        width: 260px;
-    }
-
-    .formulario-login h2 {
-        font-size: 28px;
-    }
-
-    form .email-login, .senha-login {
-        width: 260px;  
-    }
-
-    .btn-entrar {
-        width: 100%;
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -308,7 +396,7 @@ form .mantenha-conectado {
     }
 
     nav .logo {
-        padding-top: 30px;
+        padding-top: 2px;
     }
 
     /* PRIMEIRA SECTION */
@@ -317,7 +405,7 @@ form .mantenha-conectado {
         font-size: 2em;
     }
 
-    .primeira-section h1 br {
+    .primeira-section h1 br { 
         display: none;
     }
 
@@ -341,7 +429,11 @@ form .mantenha-conectado {
         margin: auto;
         padding: 20px 0px;
     }
-        
+    
+    /* SEGUNDA SECTION */
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     /* FORMULARIO LOGIN */
     .formulario-login {
