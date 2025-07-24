@@ -11,6 +11,8 @@ body {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     background-color: #121723;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* CABEÇALHO HEADER */
@@ -51,11 +53,6 @@ nav .logo a {
 .menu li a:hover {
     color: #fff;
     transition: 0.4s;
-}
-
-
-.submenu {
-    display: none;
 }
 
 .btn-login a {
@@ -197,6 +194,145 @@ nav .logo a {
 
 /*TERCEIRA SECTION*/
 
+.acima-video h1 {
+    font-size: 3.3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.acima-video p {
+    font-size: 1.1rem;
+    color: #707B80;
+    text-align: center;
+}
+
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57.9%;
+    position: relative;
+    
+}
+
+.terceira-section {
+    max-width: 1400px;
+    margin: auto;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.links-externos {
+    background-color: #1D2430;
+    max-width: 1400px;
+    padding: 60px 70px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    columns: 2;
+    margin-top: -200px;
+}
+
+.links-externos img {
+    align-items: center;
+    display: flex;
+    padding: 10px 5px;
+}
+
+.sobre {
+    display: flex;
+    margin: 60px 0px;
+}
+
+.bloco-sobre {
+    display: block;
+    padding: 40px;
+}
+
+.sobre .bloco-sobre h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.sobre .bloco-sobre p {
+    color: #707B80;
+    font-size: 20px;
+    padding: 20px 20px 20px 0px;
+}
+
+.sobre .bloco-sobre ul li {
+    list-style: none;
+    color: #707B80;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.sobre .bloco-sobre ul li::before {
+    content: '✓';
+    background-color: #2C303B;
+    padding: 3px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.imagem-sobre {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px 20px 0px 0px;
+}
+
+.imagem-sobre img {
+    max-height: auto;
+    display: block;
+}
+
+.sobre2 {
+    display: flex;
+    padding: 100px 0px;
+}
+
+.imagem-sobre2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0px 0px 0px 40px;
+}
+
+.imagem-sobre2 img{
+    max-height: auto;
+    display: block;
+}
+
+.bloco-sobre2 {
+    display: block;
+    width: 470px;
+    height: 470px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bloco-sobre2 h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 20px 0px;
+}
+
+.bloco-sobre2 p {
+    color: #707B80;
+    font-size: 18px;
+    line-height: 30px;
+}
 
 /*PAGINA DE LOGIN*/
 
@@ -373,17 +509,27 @@ form .mantenha-conectado {
 }
 
 .aceitar-termos {
-    display: flex;
+    display: inline-block;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4px;
+    padding: 10px;
+    line-height: 20px;
+    margin-top: 5px;
 }
+
+
 
 /* PARTE DA RESPONSIVIDADE*/
 @media(max-width: 1024px) {
+
+    /* SEGUNDA SECTION */
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* TERCEIRA SECTION */
+    
+
 }
 
 /* Celular grande: até 768px */
@@ -435,6 +581,69 @@ form .mantenha-conectado {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* TERCEIRA SECTION */
+    .acima-video h1 {
+        font-size: 2rem;
+    }
+
+    .acima-video p {
+        padding: 10px 20px;
+    }
+
+    div.video iframe {
+        width: 80%;
+        height: 80%;
+        left: 70px;
+    }
+
+    .links-externos {
+        margin: 10px 10px;
+        padding: 30px 20px;
+    }   
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre .bloco-sobre h1 {
+        font-size: 2.3rem;
+    }
+
+    .imagem-sobre {
+        margin: 0px 20px 10px 10px;
+    }
+
+    .imagem-sobre img {
+        width: 370px;
+        margin: 0px 30px;
+    }
+
+    hr {
+        display: flex;
+        width: 100%;
+    }
+
+    .sobre2 {
+        flex-direction: column;
+    }
+
+    .bloco-sobre2 {
+        padding: 30px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem-sobre2 {
+        align-items: center;
+        margin: 0px 20px 10px 1px;
+    }
+
+    .imagem-sobre2 img {
+        width: 370px;   
+    }
+
+
+
     /* FORMULARIO LOGIN */
     .formulario-login {
         width: 260px;
@@ -444,6 +653,11 @@ form .mantenha-conectado {
         font-size: 28px;
     }
 
+    .formulario-login .ou-entre {
+        
+        padding: 15px 27px;
+    }
+
     form .email-login, .senha-login {
         width: 260px;  
     }
@@ -451,6 +665,7 @@ form .mantenha-conectado {
     .btn-entrar {
         width: 100%;
     }
+
 }
 
 /* Celular pequeno: até 480px */
@@ -462,8 +677,18 @@ form .mantenha-conectado {
         padding: 30px 0px;
     }
 
-    /* PRIMEIRA SECTION */
-    
+    /* TERCEIRA SECTION */
+    .links-externos img {
+        width: 180px;
+        gap: 10px;
+    }
+
+
+    div.video iframe {
+        width: 80%;
+        height: 80%;
+        left: 45px;
+    }
 
     /* FORMULAROP LOGIN */
     .formulario-login {
